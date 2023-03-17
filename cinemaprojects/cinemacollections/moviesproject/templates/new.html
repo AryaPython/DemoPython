@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input style="background-color:#87cefa" type="text" name="name" placeholder="enter the movie name" ><br>
+    <input style="background-color:#87cefa" type="text" name="des" placeholder="enter the description" ><br>
+    <input style="background-color:#87cefa" type="text" name="year" placeholder="enter the movie year" ><br>
+    <input style="background-color:#87cefa" type="file" name="img"></br>
+    <input style="background-color:#dc143c" type="submit" >
+</form>
+{% endblock %}
